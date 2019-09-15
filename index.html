@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Paveikslėliai, Grupavimas ir Inline stiliai</title>
+
+</head>
+
+<body style="font-family:arial;">
+    <div style="text-align:left;border:1px solid black; width:55%; margin:0 auto; padding:25px;">
+        <h1 style="text-align:center;">HTML Paveikslėliai</h1>
+
+        <p>HTML kalboje paveikslėliai yra įterpiami per žymą <strong><small>&#60;img&#62; . &#60;img&#62;</small></strong> žyma yra VOID elementas, ji taigi, ji neturi
+            <br> uždarymo žymos ir negali laikyti turinio. Paveikslėlio dydis yra keičiamas CSS taisyklių pagalba. <strong><small>&#60;img&#62;</small></strong> taip pat
+            <br> turi <strong><small>width</small></strong> ir <strong><small>height</small></strong> parametrus, kurie nurodo paveikslėlio dydį pikseliais. Visgi, geriausia praktika - šių atributų
+            <br> nenaudoti, o paveikslėlio dydį keisti aprašant CSS stiliaus taisykles.</p>
+        <h2>Paveikslėlio įterpimas ir dydžio keitimas (naudojant <small>style=""</small> atributą): </h2>
+        <div style="margin : auto; text-align: center">
+            <img src="img1.png" alt="nuotrauka1" style="width:200px;height:150px;">
+            <img src="img2.jpg" alt="nuotrauka2" style="width:200px;height:150px;">
+            <img src="img3.png" alt="nuotrauka3" style="width:200px;height:150px;">
+        </div>
+        <h2>Paveikslėlio įterpimas (naudojant <small>&#60;figure&#62;</small> elementą):</h2>
+
+        <div style="margin : auto; text-align: center">
+            <figure>
+                <img src="img4.png" alt="nuotrauka4" width="550" height="450">
+                <figcaption>Paveikslėlis su <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">&#60;figcaption elementu&#62;</a></figcaption>
+            </figure>
+        </div>
+
+        <h2>Paveikslėlis su nuoroda + <small>&#60;figcaption&#62;</small></h2>
+        <div style="margin : auto; text-align: center">
+            <figure>
+                <a href="https://dribbble.com" target="_blank">
+                    <img src="img5.png" alt="nuotrauka5" width="550" height="250">
+                </a>
+                <figcaption>Paveikslėliai užduočiai: &#169; <a href="http://dribbble.com ">dribbble</a></figcaption>
+            </figure>
+        </div>
+    </div>
+</body>
+
+</html>
